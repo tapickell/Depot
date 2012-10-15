@@ -33,17 +33,15 @@
       margin-bottom: 2px;
       color: #227;
     }
-
-    p {
-      margin-left: 100px;
-      margin-top: 0.5em;
-      margin-bottom: 0.8em;
-    }
     
-    div.price_line {
+    p, div.price_line {
       margin-left: 100px;
       margin-top: 0.5em;
       margin-bottom: 0.8em;
+
+      form, div {
+        display: inline;
+      }
     }
 
     .price {
