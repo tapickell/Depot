@@ -2,18 +2,4 @@
   %p#notice= notice
 .cart_title Your Cart
 
-%table 
-  - @cart.line_items.each do |item|
-    %tr 
-      %td #{item.quantity} &times 
-      %td #{item.product.title}
-      %td.item_price #{number_to_currency(item.total_price)}
-
-  %tr.total_line 
-    %td{:colspan => "2"} Total
-    %td.total_call #{number_to_currency(@cart.total_price)}
-
-= button_to 'Empty cart', @cart, method: :delete, confirm: 'Are you sure?'
-/ = link_to 'Edit', edit_cart_path(@cart)
-/ |
-/ \#{link_to 'Back', carts_path}
+= render cart
