@@ -11,6 +11,7 @@
       = @page_title || "Pragmatic Bookshelf"
     #columns
       #side
+      - if @cart
         = hidden_div_if(@cart.line_items.empty?, id: 'cart') do
           =render @cart
 
