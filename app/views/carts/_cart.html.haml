@@ -7,7 +7,7 @@
     %td{:colspan => "2"} Total
     %td.total_call #{number_to_currency(cart.total_price)}
 
-= button_to 'Empty cart', cart, method: :delete, remote: false, confirm: 'Are you sure?'
+= button_to 'Empty cart', cart, method: :delete, remote: true, confirm: 'Are you sure?'
 -# change remote to true to get cart to hide on empty cart
 -# causes issue on add item where items don't display without refresh
 -# need to work this out
