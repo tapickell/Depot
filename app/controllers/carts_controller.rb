@@ -85,6 +85,7 @@ class CartsController < ApplicationController
 
     respond_to do |format|
       format.html { redirect_to store_url }
+      # format.js   #used for ajax empty cart button but has bug that adding to cart after needs refresh
       format.json { head :no_content }
     end
   end
