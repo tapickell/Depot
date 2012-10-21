@@ -37,6 +37,13 @@ class ProductsController < ApplicationController
     @product = Product.find(params[:id])
   end
 
+  def who_bought
+    @product = Product.find(params[:id])
+    respond_to do |format|
+      format.atom
+    end
+  end
+
   # POST /products
   # POST /products.json
   def create
