@@ -28,6 +28,8 @@ gem 'haml-rails'
 group :development do
   gem 'hpricot'
   gem 'ruby_parser'
+  gem 'guard'
+  gem 'rb-fsevent', :require => false
 end
 
 # To use ActiveModel has_secure_password

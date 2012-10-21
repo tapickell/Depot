@@ -30,6 +30,7 @@ class UserStoriesTest < ActionDispatch::IntegrationTest
     assert_response :success
     assert_template "new"
 
+    # create order with user details
     post_via_redirect "orders", order: { name: "Dave Thomas", 
                                       address: "123 The Street", 
                                         email: "dave@example.com",
