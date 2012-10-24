@@ -1,2 +1,10 @@
-%h1 Sessions#new
-%p Find me in app/views/sessions/new.html.haml
+.depot_form
+  - if flash[:alert]
+    %p#notice= flash[:alert]
+  = form_tag do
+    %fieldset
+      %legend
+        Please Log In
+      %  
+        = label_tag :name, 'Name:'
+        = text_field_tag :name, params[:name]
