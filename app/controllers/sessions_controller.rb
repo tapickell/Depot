@@ -2,6 +2,7 @@ class SessionsController < ApplicationController
   skip_before_filter :authorize
   
   def new
+    # nothing in here yet
   end
 
   def create
@@ -18,4 +19,5 @@ class SessionsController < ApplicationController
     session[:user_id] = nil
     redirect_to store_url, notice: "Logged out"
   end
+
 end
