@@ -1,0 +1,8 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+#fixed issue in 14.2 BCrypt::Password????
+one:
+  name: dave
+  password_digest: <%= BCrypt::Password.create('secret') %>
+two:
+  name: MyString
+  password_digest: MyString

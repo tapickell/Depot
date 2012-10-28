@@ -29,12 +29,18 @@ group :development do
   gem 'hpricot'
   gem 'ruby_parser'
   gem 'rb-fsevent', :require => false
+<<<<<<< HEAD
   gem 'guard-rspec'
   gem 'guard-cucumber'
+=======
+  gem 'guard-test'
+  gem 'guard-livereload'
+>>>>>>> 8d65b2c9be6551fd4b2f71bd9b1e97c1aa4d5f41
 end
 
+
 # To use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
+gem 'bcrypt-ruby', '~> 3.0.0'
 
 # To use Jbuilder templates for JSON
 # gem 'jbuilder'
