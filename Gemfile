@@ -28,6 +28,9 @@ gem 'haml-rails'
 group :development do
   gem 'hpricot'
   gem 'ruby_parser'
+  gem 'rb-fsevent', :require => false
+  gem 'guard-rspec'
+  gem 'guard-cucumber'
 end
 
 # To use ActiveModel has_secure_password
