@@ -14,7 +14,7 @@ Depot::Application.configure do
     domain: "depot.toddpickell.me",
     authentication: "plain",
     use_name: "myappleguy",
-    password: "Ic0de121926",
+    password: "************",
     enable_starttls: true
   }
   
